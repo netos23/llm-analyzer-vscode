@@ -4,7 +4,7 @@
   "description": "Powerfull code analyzer based on llms",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Other"
@@ -29,6 +29,10 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test"
+  },
+  "dependencies": {
+    "glob": "^11.0.0",
+    "vscode-languageclient": "^9.0.1"
   },
   "devDependencies": {
     "@types/vscode": "^1.100.0",
